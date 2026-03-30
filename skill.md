@@ -175,6 +175,10 @@ if matches:
 ### Step 5 — 메인 컴포지션 생성
 
 > **`refs/video-rules.md` 를 Read한 후** `src/Shorts[ID].tsx` 와 `Root.tsx` 업데이트
+>
+> **채널명 처리 규칙**: `KoreanShorts[ID].tsx` 생성 시 좌상단 채널명 영역에 `.channel-config.json`의 `channel_name` 값을 삽입합니다.
+> - `channel_name`이 있으면 해당 텍스트 표시
+> - `channel_name`이 비어 있거나 없으면 채널명 영역 전체를 렌더링하지 않음 (여백 처리)
 
 ### Step 6 — 렌더링
 
