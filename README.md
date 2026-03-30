@@ -20,7 +20,7 @@ git clone https://github.com/devkwak73/remotion-shorts-creator ~/.claude/skills/
 
 ### 방법 2 — ZIP 다운로드
 
-1. 이 페이지 상단 **Code → Download ZIP** 클릭
+1. [remotion-shorts-creator.zip](./remotion-shorts-creator.zip) 다운로드
 2. 압축 해제 후 폴더를 아래 경로로 복사:
    - Windows: `C:\Users\[이름]\.claude\skills\remotion-shorts-creator\`
    - Mac/Linux: `~/.claude/skills/remotion-shorts-creator/`
@@ -67,6 +67,15 @@ remotion-shorts-creator/
 | 📱 숏폼 | 30~60초 | 유튜브 쇼츠, 인스타 릴스, 틱톡 |
 | 📺 미디폼 | 5~10분 | 유튜브 일반 영상 |
 | 🎬 롱폼 | 10분 이상 | 유튜브 심화/강의 영상 |
+
+---
+
+## 다운로드
+
+| 파일 | 설명 |
+|------|------|
+| [remotion-shorts-creator.zip](./remotion-shorts-creator.zip) | 스킬 파일 ZIP (git 없이 설치 시) |
+| [remotion-shorts-creator-guide.pdf](./remotion-shorts-creator-guide.pdf) | 설치 및 사용 가이드 PDF |
 
 ---
 
