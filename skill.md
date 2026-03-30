@@ -69,6 +69,23 @@ pip install edge-tts
 mkdir -p public/audio scripts out src/scenes src/components
 ```
 
+### Phase 3-B — 채널 설정 저장
+
+인터뷰 답변을 스킬 디렉터리의 `.channel-config.json` 에 저장합니다 (Write 도구 사용):
+
+```json
+{
+  "project_path": "[사용자가 입력한 절대 경로]",
+  "channel_name": "[채널명]",
+  "theme_color": "[hex 색상]",
+  "audience": "[주요 시청자]",
+  "topic": "[채널 핵심 주제]",
+  "tone": "[말투]"
+}
+```
+
+> 저장 경로: 이 `skill.md` 파일과 **같은 폴더** (`.claude/skills/remotion-shorts-creator/.channel-config.json`)
+
 ### Phase 4 — 기본 파일 생성
 
 > **`refs/video-rules.md` 를 Read한 후** styles.ts, SceneIndicator.tsx, ChannelBadge.tsx 생성
@@ -76,6 +93,12 @@ mkdir -p public/audio scripts out src/scenes src/components
 ---
 
 ## NEW 모드 — 영상 제작
+
+### Step 0 — 채널 설정 로드
+
+> 이 `skill.md` 와 **같은 폴더**의 `.channel-config.json` 을 Read합니다.
+> - 파일이 있으면: `project_path`, `channel_name`, `theme_color` 등을 자동으로 불러와서 인터뷰에 기본값으로 사용합니다.
+> - 파일이 없으면: "먼저 `/remotion-shorts-creator setup` 을 실행해 주세요." 안내 후 중단합니다.
 
 ### Step 1 — 인터뷰 (AskUserQuestion)
 
@@ -165,6 +188,8 @@ npx remotion render Shorts[ID] out/video-[ID].mp4 --codec=h264 --crf=18
 ## RUN 모드 — 즉시 제작
 
 인터뷰 없이 주제만으로 바로 영상을 만듭니다. Claude가 주제를 분석해서 대본·테마·수치를 모두 자동 결정합니다.
+
+> **먼저** 이 `skill.md` 와 같은 폴더의 `.channel-config.json` 을 Read하여 `project_path` 를 자동으로 불러옵니다. 없으면 setup 실행 안내 후 중단합니다.
 
 1. 주제에서 핵심 메시지 추출 (훅, CTA 키워드 자동 결정)
 2. 주제에 맞는 테마 색상 자동 선택 (`refs/video-rules.md` 색상 가이드 참고)
