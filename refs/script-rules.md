@@ -26,12 +26,16 @@ Cover(2초) → Hold(0.3초) → 씬1 title → 씬2 checklist → 씬3 stat →
 
 | 타입 | 설명 | 사용 포맷 |
 |------|------|-----------|
-| `title` | 훅 + 바차트 또는 대형 숫자 | 숏폼 씬1 |
-| `content` | 체크리스트 / 통계 카드 / 비교표 | 숏폼 씬2~4 |
+| `title` | 훅 + `bar_chart` 또는 `big_number` visual | 숏폼 씬1 |
+| `content` | `checklist` / `stat_card` / `compare_table` visual | 숏폼 씬2~4 |
 | `outro` | CTA 버튼 + 댓글 유도 | 모든 포맷 |
 | `chapter_title` | 챕터 제목 카드 | 미디폼/롱폼 |
-| `explain` | 설명 씬 (체크리스트·통계·표 포함) | 미디폼/롱폼 |
+| `explain` | 설명 씬 — 모든 visual 타입 사용 가능 | 미디폼/롱폼 |
 | `chapter_summary` | 챕터 핵심 요약 | 미디폼/롱폼 |
+
+**visual 선택 기준:**
+- `bar_chart` — 두 방법의 시간/비용 비교가 핵심일 때 (예: "4시간 vs 30분")
+- `big_number` — 임팩트 있는 단일 수치가 핵심일 때 (예: "90% 실패율", "-3,500만원")
 
 ---
 
