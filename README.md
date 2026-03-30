@@ -76,3 +76,11 @@ remotion-shorts-creator/
 cd ~/.claude/skills/remotion-shorts-creator
 git pull
 ```
+
+---
+
+## 제작자
+
+**부놈** — 부동산 경매 자동화 유튜브 채널
+📧 dev.kwak73@gmail.com
+🐙 https://github.com/devkwak73

@@ -14,6 +14,8 @@ triggers:
 
 Claude + 인터넷 연결만으로 한국어 쇼츠/미디폼/롱폼 영상을 자동 제작하는 스킬입니다.
 
+> 제작: **부놈** · dev.kwak73@gmail.com · https://github.com/devkwak73
+
 > **참조 파일** (필요한 단계에서 Read):
 > - `refs/script-rules.md` — 대본 구조, 씬 타입, 프레임 계산
 > - `refs/video-rules.md` — 컴포넌트 패턴, 색상 테마, 공통 규칙
